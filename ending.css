@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Poppins:wght@300;400;600&display=swap');
+
+/* ---------------- FULL PAGE ---------------- */
+/* ---------------- FULL PAGE ---------------- */
+/* ---------------- FULL PAGE ---------------- */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+              url("../images/img 8.jpeg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+/* ---------------- MAIN HEADING ---------------- */
+h1 {
+  font-family: 'Rye', cursive;
+  font-size: 3rem;
+  color: #f7f0f0;
+  text-shadow: 0 0 15px rgba(255, 61, 104, 0.7);
+  animation: pop 1s ease;
+}
+
+/* ---------------- FUN TEXT ---------------- */
+/* ---------------- FUN TEXT ---------------- */
+.fun-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 30px auto 50px;
+  max-width: 600px;
+  font-family: 'Rye', cursive;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+/* ---------------- BUTTON ---------------- */
+button {
+  background: linear-gradient(135deg, #ff4d6d, #ff758f);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(255, 77, 109, 0.45);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.12);
+  box-shadow: 0 15px 35px rgba(255, 77, 109, 0.65);
+}
+
+/* ---------------- TEXT POP ANIMATION ---------------- */
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ---------------- FALLING HEARTS ---------------- */
+/* ---------------- FALLING HEARTS ---------------- */
+/* ---------------- FALLING HEARTS ---------------- */
+.hearts::before {
+  content: "💖   💘   💕   💓   💗   💞";
+  position: absolute;
+  left: 5%;
+  width: 100px;
+  height: 100%;
+  font-size: 34px;
+  animation: fallLeft 8s linear infinite;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hearts::after {
+  content: "💖   💘   💕   💓   💗   💞";
+  position: absolute;
+  right: 5%;
+  width: 100px;
+  height: 100%;
+  font-size: 34px;
+  animation: fallRight 8s linear infinite;
+  animation-delay: 2s;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+@keyframes fallLeft {
+  0% { top: -15%; }
+  100% { top: 120%; }
+}
+
+@keyframes fallRight {
+  0% { top: -15%; }
+  100% { top: 120%; }
+}
+/* ---------------- FIREWORKS ---------------- */
+.fireworks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.fireworks span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #ff3d68, transparent);
+  border-radius: 50%;
+  animation: explode 3.5s infinite ease-out;
+  opacity: 0;
+}
+
+.fireworks span:nth-child(1) { left: 20%; top: 60%; animation-delay: 0s; }
+.fireworks span:nth-child(2) { left: 50%; top: 40%; animation-delay: 0.7s; }
+fireworks span:nth-child(3) { left: 70%; top: 65%; animation-delay: 1.4s; }
+.fireworks span:nth-child(4) { left: 30%; top: 30%; animation-delay: 2.1s; }
+.fireworks span:nth-child(5) { left: 80%; top: 45%; animation-delay: 2.8s; }
+
+@keyframes explode {
+  0% { transform: scale(0); opacity: 1; }
+  60% { transform: scale(4.5); opacity: 0.8; }
+  100% { transform: scale(7); opacity: 0; }
+}
+
+/* ---------------- PARAGRAPH STYLING ---------------- */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 15px auto;
+}
+
+/* ---------------- H2 STYLING ---------------- */
+h2 {
+  font-family: 'Rye', cursive;
+  font-size: 2.5rem;
+  color: #f7f0f0;
+  text-shadow: 0 0 15px rgba(255, 61, 104, 0.7);
+  margin: 20px 0;
+}

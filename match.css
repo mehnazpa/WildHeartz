@@ -1,0 +1,158 @@
+/* ---------------- Google Fonts ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Poppins:wght@400;600&display=swap');
+
+/* ---------------- Full Page Body ---------------- */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("../images/img 5.jpeg"); /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/* ---------------- Loader ---------------- */
+#loader {
+  font-family: 'Rye', cursive;
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 12px rgba(255, 183, 3, 0.9),
+               0 0 30px rgba(255, 153, 0, 0.7);
+}
+
+/* Heart Animation */
+.heart {
+  font-size: 90px;
+  color: #ff3b3b;
+  animation: pulse 1s infinite;
+  text-shadow: 0 0 15px #ff6b6b, 0 0 25px #ff3b3b;
+  margin-bottom: 20px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.6); }
+  100% { transform: scale(1); }
+}
+
+/* ---------------- Result Text ---------------- */
+#resultBox {
+  font-size: 26px;
+  line-height: 2.5;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-bottom: 40px;
+}
+
+#resultBox b {
+  color: #520303;
+  font-size: 2.5rem;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 20px #ff6a00, 0 0 30px #ff9500;
+}
+
+#resultBox .pair-love {
+  font-size: 4rem;
+  font-family: 'Georgia', serif;
+  color: #f30707;
+  text-shadow: 0 0 20px #060606, 0 0 30px #0a0909;
+}
+
+/* Warning alert */
+/* Warning alert */
+#resultBox .warning {
+  font-size: 1.2rem;
+  color: #f0f0eb;
+  text-shadow: 0 0 10px #918b70;
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(255, 204, 0, 0.2);
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ---------------- Start Chat Button ---------------- */
+#chatBtn {
+  margin-top: 20px;
+  padding: 18px 45px;
+  font-size: 20px;
+  font-family: 'Rye', cursive;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+  animation: pulseBtn 2s infinite;
+}
+
+/* Glow + hover */
+#chatBtn:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 
+    0 0 25px #ff416c,
+    0 0 40px #ff4b2b,
+    0 0 60px #fff5;
+}
+
+/* Pulse animation */
+@keyframes pulseBtn {
+  0% { box-shadow: 0 6px 20px rgba(255,75,43,0.6); }
+  50% { box-shadow: 0 6px 35px rgba(255,65,108,0.9), 0 0 10px rgba(255,255,255,0.4); }
+  100% { box-shadow: 0 6px 20px rgba(255,75,43,0.6); }
+}
+
+/* Sparkle effect */
+#chatBtn::after {
+  content: "✨";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 1.3rem;
+  opacity: 0;
+  animation: sparkle 1.5s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: translate(0,0) scale(0); opacity: 0; }
+  30% { transform: translate(90px, 10px) scale(1); opacity: 1; }
+  60% { transform: translate(50px, 20px) scale(0.8); opacity: 0.8; }
+}
+
+/* ---------------- Responsive ---------------- */
+@media screen and (max-width: 450px) {
+  #resultBox {
+    font-size: 20px;
+  }
+
+  .heart {
+    font-size: 60px;
+  }
+
+  #chatBtn {
+    font-size: 16px;
+    padding: 14px 35px;
+  }
+}

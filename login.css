@@ -1,0 +1,47 @@
+/* ---------------- Full Page Background ---------------- */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height of viewport */
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+  /* Background image with fade overlay */
+  background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), /* fade overlay */
+    url("../images/img 2.jpeg"); /* replace with your image path */
+  
+  background-size: cover;        /* makes image cover entire page */
+  background-position: center;   /* centers image */
+  background-repeat: no-repeat;  /* prevents tiling */
+  
+  /* Padding from top */
+  padding-top: 120px;
+  
+  color: #fff; /* optional: text color for contrast */
+}
+
+/* ---------------- Inputs ---------------- */
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ---------------- Buttons ---------------- */
+button {
+  padding: 12px 25px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #ffcc70;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 204, 112, 0.8);
+}

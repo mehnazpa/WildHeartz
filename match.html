@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Match Result | Wild Swipe</title>
+  <link rel="stylesheet" href="css/match.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="heart">❤️</div>
+    <p>Stalking Your Perfect Prey…😏</p>
+  </div>
+
+  <!-- Result Screen -->
+  <div id="resultBox" style="display:none;">
+    <!-- Match result content will be injected by JS -->
+
+    <!-- CHAT BUTTON -->
+    <button id="chatBtn" onclick="goToChat()">
+      Leap Into Love 🐸💘
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    startMatch();
+
+    // redirect to chat page
+    function goToChat() {
+      window.location.href = "chat.html";
+    }
+  </script>
+
+</body>
+</html>

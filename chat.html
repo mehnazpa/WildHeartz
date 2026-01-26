@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wild Chat 🐾</title>
+  <link rel="stylesheet" href="css/chat.css">
+  <script src="js/script.js"></script>
+  <script src="js/ending.js"></script>
+</head>
+<body>
+
+  <div class="chat-wrapper">
+
+    <!-- Chat Title -->
+    <div id="chatTitle">Chatting with Bird 🐦</div>
+
+    <!-- Chat Box -->
+    <div id="chatBox"></div>
+
+    <!-- Input Area -->
+    <div class="inputArea">
+      <input id="msgInput" placeholder="Type your roar..." />
+      <button onclick="sendMessage()">🐾</button>
+      <button onclick="translateLast()">🧠</button>
+    </div>
+
+    <!-- Play Sound Button -->
+    <button class="sound-btn" onclick="playAnimalSound()">
+      🔊 Play Animal Sound
+    </button>
+<!-- Go to Ending Button -->
+<button class="end-btn" onclick="goEnding()">
+  End Chat 🏁
+</button>
+  </div>
+
+</body>
+
+</html>

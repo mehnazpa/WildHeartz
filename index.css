@@ -1,0 +1,95 @@
+/* ---------------- Full Page Background ---------------- */
+body.home {
+  margin: 0;
+  height: 100vh;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("../images/img 1.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertically center everything */
+  align-items: center;       /* Horizontally center */
+  text-align: center;
+
+  font-family: 'Blobby', sans-serif;  /* New clean modern font */
+  color: white;
+}
+
+/* ---------------- Title ---------------- */
+.title {
+  font-family: 'Georgia', serif;  /* Use Rye font */
+  font-size: 8rem;              /* big for landing page */
+  font-weight: normal;          /* Rye is decorative, weight is normal */
+  color: #ffb703;
+  text-shadow:
+    0 0 15px rgba(239, 97, 9, 0.9),
+    0 0 40px rgba(255,153,0,0.9);
+  text-align: center;
+  margin: 0;
+}
+
+
+/* ---------------- Motto ---------------- */
+.motto {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 10px 0 30px;
+}
+
+/* ---------------- Button ---------------- */
+.main-btn {
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #ff6a00, #ffcc70);
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 50px;
+}
+
+.main-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 204, 112, 1);
+}
+
+/* ---------------- Container (optional) ---------------- */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff3d68;
+  text-shadow: 0 0 20px rgba(255, 61, 104, 0.8);
+}
+
+/* ---------------- H2 STYLING (MOTTO) ---------------- */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #f90505;
+  text-shadow: 0 0 20px rgba(255, 183, 3, 0.8), 0 0 40px rgba(255, 153, 0, 0.9);
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Wild Match 🐾</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Funny Heading -->
+    <h2 class="title">Pick Your Wild Side! 🐾</h2>
+
+    <!-- Species Select -->
+    <select id="mySpecies">
+      <option value="">-- I am a... --</option>
+      <option value="Lion">Lion 🦁</option>
+      <option value="Wolf">Wolf 🐺</option>
+      <option value="Deer">Deer 🦌</option>
+      <option value="Bird">Bird 🐦</option>
+      <option value="Rabbit">Rabbit 🐰</option>
+      <option value="Snake">Snake 🐍</option>
+    </select>
+
+    <br><br>
+
+    <select id="pairSpecies">
+      <option value="">-- I want to meet... --</option>
+      <option value="Lion">Lion 🦁</option>
+      <option value="Wolf">Wolf 🐺</option>
+      <option value="Deer">Deer 🦌</option>
+      <option value="Bird">Bird 🐦</option>
+      <option value="Rabbit">Rabbit 🐰</option>
+      <option value="Snake">Snake 🐍</option>
+    </select>
+
+    <br><br>
+
+    <!-- Traits Checkboxes -->
+    <div class="traits">
+      <label><input type="checkbox" value="Funny"> Funny 😂</label>
+      <label><input type="checkbox" value="Brave"> Brave 💪</label>
+      <label><input type="checkbox" value="Playful"> Playful 😏</label>
+      <label><input type="checkbox" value="Loyal"> Loyal 🐾</label>
+    </div>
+
+    <button class="main-btn" onclick="saveProfile()">Roar Into Love 🦁</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
